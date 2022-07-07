@@ -1,0 +1,65 @@
+  <html>
+    <head>
+        <title>Programacion</title>
+    </head>
+    <body>
+        <p>
+            Como declarar arrays
+            <h4 id="declarar_arrays"></h4>
+        </p>
+        <hr>
+        <p>
+            Como obtener el primer elemento del array
+            <h4 id="acceder_primer_elemento"></h4>
+        </p>
+        <hr>
+        <p>
+            Como obtener el segundo elemento del array
+            <h4 id="acceder_segundo_elemento"></h4>
+        </p>
+        <hr>
+        <p>
+            Como obtener el tercer elemento del array
+            <h4 id="acceder_tercer_elemento"></h4>
+        </p>
+        <hr>
+        <p>
+            Como obtener la longitud del array
+            <h4 id="ver_longitud_del_elemento"></h4>
+        </p>
+        <hr>
+        <p>
+            Como añadir un elemento al final de un array
+            <h4 id="añadir_elemento_al_final_de_un_array"></h4>
+        </p>
+        </body>
+        <script>
+//como declarar un arreglo o matriz. El id es para referirnos al innerHTML
+
+var frutas=["Manzana", "Mango", "Platano"];
+           //0           1        2   
+    console.log(frutas);
+    document.getElementById("declarar_arrays").innerHTML=frutas;
+var primera_fruta =frutas[0];
+    console.log(primera_fruta);
+    document.getElementById("acceder_primer_elemento").innerHTML =primera_fruta;
+
+var segunda_fruta =frutas[1];
+    console.log(segunda_fruta);
+    document.getElementById("acceder_segundo_elemento").innerHTML =segunda_fruta;
+
+var tercer_fruta =frutas[2];
+    console.log(tercer_fruta);
+    document.getElementById("acceder_tercer_elemento").innerHTML =tercer_fruta;
+
+var longitud_del_array =frutas.length
+    console.log(longitud_del_array);
+    document.getElementById("ver_longitud_del_elemento").innerHTML=longitud_del_array;
+
+    var frutas.push("cereza");
+    console.log(frutas);
+    document.getElementById("añadir_elemento_al_final_de_un_array").innerHTML = frutas;
+
+
+</script>
+  </html>
